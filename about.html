@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Котики.рус - О блоге</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<img src="images/logo.png">
+			<h1>Котики.рус</h1>
+		</a>
+	</header>
+	<div id="container">
+		<aside>
+			<nav id="main-menu">
+			</nav>
+		</aside>
+		
+		<div id="articles">
+			<style>
+				#article-about > table {
+					width: 100%;
+				}
+				#article-about > table td {
+					padding: 20px;
+					width: 50%;
+				}
+				#article-about > table td h1 {
+					text-align: center;
+					margin: 10px 0;
+				}
+				#article-about > table td:last-child {
+					box-shadow: inset 0 0 5px 0 #000;
+				}
+				#article-about .photo {
+					position: relative;
+					display: inline-block;
+					height: 200px;
+					margin: 10px;
+				}
+				#article-about .photo img {
+					display: block;
+					height: 100%;
+				}
+				#article-about .photo::after {
+					content: attr(data-title);
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					padding: 5px;
+					background-color: #fff;
+					text-align: center;
+					font-size: 20px;
+										
+					transform: rotateX(90deg);
+					
+					transition: all .3s;
+				}
+				#article-about .photo:hover::after {
+					transform: rotateX(0deg);
+				}
+			</style>
+			<article id="article-about">
+				<h1>О блоге</h1>
+				
+				<table border="0">
+					<tr>
+						<td valign="top">
+							<h1>О блоге</h1>
+							<p>
+								Наш блог был запущен не так давно, в 2017 году и мы только начинаем наше развитие.
+							</p>
+							<p>
+								Мы очень любим кошек. И хотели поделиться с вами всеми собранными нами данными о них, а также сделали подборку интересных фактов о них, которые рекомендуем прочесть всем, чтобы узнать очень много полезного об этих милых домашних животных.
+							</p>
+							<br>
+							<br>
+							<h1>Удачного кошачьего изучения!</h1>
+							<img class="fixed-image center" src="images/aboutCat.jpg">
+						</td>
+						<td>
+							<h1>Сотрудники</h1>
+							<div class="photo" data-title="Я" line-count="2">
+								<img src="images/employees/GenDir.jpg">
+							</div>
+							<div class="photo" data-title="Мой друг" line-count="2">
+								<img src="images/employees/GenFriend.jpg">
+							</div>
+							<div class="photo" data-title="Главный программист" line-count="2">
+								<img src="images/employees/MainProgrammer.jpg">
+							</div>
+							<div class="photo" data-title="Главный дизайнер" line-count="2">
+								<img src="images/employees/MainDesigner.jpg">
+							</div>
+							<div class="photo" data-title="Маркетолог" line-count="2">
+								<img src="images/employees/PRmanager.jpg">
+							</div>
+							<div class="photo" data-title="Уборщик" line-count="2">
+								<img src="images/employees/Cleaner.jpg">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</article>
+		</div>
+	</div>
+	<footer>
+		2018 &copy; <a href="index.html">Котики.рус</a>
+		<a id="to-top-button" href="#">Вверх</a>
+	</footer>
+	<script src="menu-data.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

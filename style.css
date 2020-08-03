@@ -1,0 +1,315 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 800px;
+}
+
+/* Шапка */
+
+header {
+	display: block;
+	height: 100px;
+	padding: 20px 100px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+header > a > * {
+	display: inline-block;
+}
+
+header > a > img {
+	height: 100%;
+	float: left;
+}
+
+header > a > h1 {
+	margin-left: 50px;
+	font-size: 50px;
+	line-height: 100px;
+	color: #000;
+}
+
+/* Конец шапки */
+
+/* Основной блок контента */
+
+#container {
+	width: 100%;
+}
+
+/* Сайдбар */
+
+aside {
+	width: 20%;
+	height: 100%;
+	margin: 30px 0;
+	float: left;
+}
+
+/* Блок навигации */
+
+#main-menu {
+	margin-left: 20px;
+	padding: 20px;
+	list-style: none;
+	
+	border-left: 1px solid #696969;
+}
+
+#main-menu li {
+	margin: 10px 0px;
+}
+
+#main-menu a {
+	text-decoration: none;
+	color: #000;
+}
+
+#main-menu a[href]:hover {
+	text-decoration: underline;
+}
+
+#main-menu a[active]::before {
+	content: '\203a';
+	position: absolute;
+	margin-left: -12px;
+}
+
+#main-menu .sub-menu::before {
+	content: '\00bb';
+	position: absolute;
+	margin-left: -12px;
+}
+
+#main-menu .sub-menu > nav {
+	display: none;
+	margin-left: 15px;
+}
+
+#main-menu .sub-menu:hover > nav {
+	display: block;
+}
+
+#main-menu .sub-menu:hover::before {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#main-menu a > span {
+	position: absolute;
+	margin-left: -12px;
+}
+
+/* Конец блока навигации */
+
+/* Конец сайдбара */
+
+/* Контент */
+
+#articles {
+	display: inline-block;
+	width: calc(80% - 101px);
+	margin: 30px 50px;
+}
+
+#articles > article {
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 60px;
+	padding-left: 50px;
+	padding-right: 10px;
+	text-align: justify;
+	border-left: 1px solid #dbdbdb;
+	
+	overflow: auto;
+	clear: both;
+}
+
+#articles > article:last-child {
+	margin-bottom: 0;
+}
+
+#articles > article > h1 {
+	margin-bottom: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#articles > article > h1 > a {
+	text-decoration: none;
+	color: #000;
+}
+
+#articles > article > h1 > a:hover {
+	text-decoration: underline;
+}
+
+#articles > article p {
+	margin-top: 10px;
+	font-size: 20px;
+	text-indent: 20px;
+}
+
+#articles > article img {
+	-webkit-box-shadow: 0 0 3px 0 #000;	
+	box-shadow: 0 0 3px 0 #000;
+}
+
+#articles > article a.read-next {
+	position: absolute;
+	margin-top: 20px;
+	padding: 5px;
+	text-decoration: none;
+	color: #0a68ff;
+	border: 1px solid #0a68ff;
+	border-radius: 10px;
+}
+
+#articles > article a.read-next:hover {
+	-webkit-box-shadow: 0 0 3px 0 #0a68ff;
+	box-shadow: 0 0 3px 0 #0a68ff;
+}
+
+/* Конец контента */
+
+#read-all-articles {
+	display: block;
+	width: 200px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: calc(50% - 100px);
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+	text-decoration: none;
+	color: #ff6b6b;
+	border: 1px solid #ff6b6b;
+	border-radius: 5px;
+}
+
+#read-all-articles:hover {
+	-webkit-box-shadow: 0 0 3px 0 #ff6b6b;
+	box-shadow: 0 0 3px 0 #ff6b6b;
+}
+
+/* Конец основного блока контента */
+
+/* Подвал */
+
+footer {
+	position: relative;
+	display: block;
+	height: 50px;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	border-top: 1px solid #dbdbdb;
+}
+
+footer > a {
+	text-decoration: none;
+	color: #000;
+}
+
+footer > a:first-child:hover {
+	text-decoration: underline;
+}
+
+#to-top-button {
+	position: absolute;
+	right: 20px;
+	padding: 0 15px;
+	background-color: #fff;	
+	border: 1px solid #000;
+	border-radius: 50%;
+}
+
+#to-top-button::after {
+	content: '\2191';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-size: 0;
+	
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	
+	z-index: -1;
+}
+
+#to-top-button:hover::after {
+	top: -50px;
+	font-size: 25px;
+}
+
+/*#to-top-button::after {
+	content: '\2191';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	top: -1px;
+	left: -1px;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 50%;
+	font-size: 25px;
+	
+	-webkit-transform: rotateY(90deg);
+	
+	transform: rotateY(90deg);
+	
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+#to-top-button:hover::after {
+	opacity: 1;
+	
+	-webkit-transform: rotateY(180deg);
+	
+	transform: rotateY(180deg);
+}*/
+
+/* Конец подвала */
+
+/* Суб-классы */
+
+.top-offset-10 {
+	margin-top: 10px;
+}
+
+.bottom-offset-10 {
+	margin-bottom: 10px;
+}
+
+.fluid-image.left {
+	margin-right: 20px;
+	float: left;
+}
+
+.fluid-image.right {
+	margin-left: 20px;
+	float: right;
+}
+
+.fixed-image.left {
+	display: block;
+	margin: 20px 0;
+}
+
+.fixed-image.center {
+	display: block;
+	margin: 20px auto;
+}
+
+.clear-float {
+	clear: both;
+}
+
+/* Конец суб-классов */

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Котики.рус - Тест</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<img src="images/logo.png">
+			<h1>Котики.рус</h1>
+		</a>
+	</header>
+	<div id="container">
+		<aside>
+			<nav id="main-menu">
+			</nav>
+		</aside>
+		
+		<div id="articles">
+			<style>
+				.question-container {
+					padding: 20px 70px;
+				}
+				.question-container > * {
+					margin: 15px 0;
+				}
+				#results-count {
+					display: block;
+					padding: 20px;
+					margin-top: 50px;
+					margin-left: 70px;
+					box-shadow: 1px 1px 5px 0 #000;
+					cursor: pointer;
+					font-size: 24px;
+					
+					background: none;
+					border: none;
+					outline: none;
+					
+					float: left;
+				}
+				#results-count:active {
+					box-shadow: 0 0 2px 0 #000;
+				}
+				#results-text {
+					margin-left: 40px;
+					font-size: 24px;
+					line-height: 160px;
+					clear: both;
+				}
+			</style>
+			<article id="quiz">
+				<h1>Проверь себя</h1>
+				<div class="question-container">
+					<h1 class="question-header">Под каким углом кошка может рассматривать предметы вокруг себя?</h1>
+					<div class="question-answer"><label><input type="radio" name="first" tag-id="1"> 180&deg;</label></div>
+					<div class="question-answer"><label><input type="radio" name="first" tag-id="2"> 150&deg;</label></div>
+					<div class="question-answer"><label><input type="radio" name="first" tag-id="3"> 205&deg;</label></div>
+					<div class="question-answer"><label><input type="radio" name="first" tag-id="4"> 230&deg;</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">Когда вибриссы необходимы кошке?</h1>
+					<div class="question-answer"><label><input type="radio" name="second" tag-id="1"> При охоте</label></div>
+					<div class="question-answer"><label><input type="radio" name="second" tag-id="2"> При сне</label></div>
+					<div class="question-answer"><label><input type="radio" name="second" tag-id="3"> При питье</label></div>
+					<div class="question-answer"><label><input type="radio" name="second" tag-id="4"> При карабканьи</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">Мышцы какой части тела кошки, позволяют ей закручиваться в клубок?</h1>
+					<div class="question-answer"><label><input type="radio" name="third" tag-id="1"> Лап</label></div>
+					<div class="question-answer"><label><input type="radio" name="third" tag-id="2"> Спины</label></div>
+					<div class="question-answer"><label><input type="radio" name="third" tag-id="3"> Шеи</label></div>
+					<div class="question-answer"><label><input type="radio" name="third" tag-id="4"> Хвоста</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">Сколько слоев живых клеток у кошачьей кожы базального слоя?</h1>
+					<div class="question-answer"><label><input type="radio" name="fourth" tag-id="1"> 2</label></div>
+					<div class="question-answer"><label><input type="radio" name="fourth" tag-id="2"> 3</label></div>
+					<div class="question-answer"><label><input type="radio" name="fourth" tag-id="3"> 6</label></div>
+					<div class="question-answer"><label><input type="radio" name="fourth" tag-id="4"> 4</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">Сколько процентов крови потребляет мозг кошки?</h1>
+					<div class="question-answer"><label><input type="radio" name="fifth" tag-id="1"> 30&#37;</label></div>
+					<div class="question-answer"><label><input type="radio" name="fifth" tag-id="2"> 15&#37;</label></div>
+					<div class="question-answer"><label><input type="radio" name="fifth" tag-id="3"> 20&#37;</label></div>
+					<div class="question-answer"><label><input type="radio" name="fifth" tag-id="4"> 22&#37;</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">Какой пульс у кошки в нормальном состоянии?</h1>
+					<div class="question-answer"><label><input type="radio" name="sixth" tag-id="1"> 200 - 250 ударов в минуту</label></div>
+					<div class="question-answer"><label><input type="radio" name="sixth" tag-id="2"> 80 - 130 ударов в минуту</label></div>
+					<div class="question-answer"><label><input type="radio" name="sixth" tag-id="3"> 130 - 180 ударов в минуту</label></div>
+					<div class="question-answer"><label><input type="radio" name="sixth" tag-id="4"> 100 - 150 ударов в минуту</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">Какие нервы управляют мышцами кошки?</h1>
+					<div class="question-answer"><label><input type="radio" name="seventh" tag-id="1"> Двигательные нервы</label></div>
+					<div class="question-answer"><label><input type="radio" name="seventh" tag-id="2"> Спинномозговые нервы</label></div>
+					<div class="question-answer"><label><input type="radio" name="seventh" tag-id="3"> Крестцовые нервы</label></div>
+					<div class="question-answer"><label><input type="radio" name="seventh" tag-id="4"> Бедренные нервы</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">С мумифицированных кошек в египте сняли ткань и увезли в...</h1>
+					<div class="question-answer"><label><input type="checkbox" name="eighth" tag-id="1"> Германию</label></div>
+					<div class="question-answer"><label><input type="checkbox" name="eighth" tag-id="2"> Англию</label></div>
+					<div class="question-answer"><label><input type="checkbox" name="eighth" tag-id="4"> Америку</label></div>
+					<div class="question-answer"><label><input type="checkbox" name="eighth" tag-id="8"> Канаду</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">Кошки трутся о людей когда...</h1>
+					<div class="question-answer"><label><input type="checkbox" name="ninth" tag-id="1"> Играют</label></div>
+					<div class="question-answer"><label><input type="checkbox" name="ninth" tag-id="2"> Ластятся</label></div>
+					<div class="question-answer"><label><input type="checkbox" name="ninth" tag-id="4"> Агрессивны</label></div>
+					<div class="question-answer"><label><input type="checkbox" name="ninth" tag-id="8"> Метят территорию</label></div>
+				</div>
+				<div class="question-container">
+					<h1 class="question-header">Сколько усов у кошек с каждой стороны морды?</h1>
+					<div class="question-answer"><label><input type="radio" name="tenth" tag-id="1"> 10</label></div>
+					<div class="question-answer"><label><input type="radio" name="tenth" tag-id="2"> 15</label></div>
+					<div class="question-answer"><label><input type="radio" name="tenth" tag-id="3"> 12</label></div>
+					<div class="question-answer"><label><input type="radio" name="tenth" tag-id="4"> 18</label></div>
+				</div>
+				<button id="results-count" onclick="CheckResults();">Узнать результат</button>
+				<span id="results-text"></span>
+			</article>
+		</div>
+	</div>
+	<footer>
+		2018 &copy; <a href="index.html">Котики.рус</a>
+		<a id="to-top-button" href="#">Вверх</a>
+	</footer>
+	<script src="menu-data.js"></script>
+	<script src="main.js"></script>
+	<script src="quiz.js"></script>
+</body>
+</html>
