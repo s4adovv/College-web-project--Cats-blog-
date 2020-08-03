@@ -1,2 +1,2 @@
-# College web project (Cats blog)
+# Блог о кошках
  Учебный проект в связке (HTML, CSS, JavaScript).Блог о кошках.
